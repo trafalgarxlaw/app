@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/CustomBackgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/quizPersonnaliseView"
+        android:layout_width="411dp"
+        android:layout_height="85dp"
+        app:cardBackgroundColor="#3A3A3A"
+        app:cardCornerRadius="20dp"
+        app:contentPadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/quizPersonnaliseButton"
+            android:layout_width="399dp"
+            android:layout_height="59dp"
+            android:background="#434343"
+            android:text="@string/ajouter_un_quiz_personnalise"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="407dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="#3A3A3A"
+        app:cardCornerRadius="20dp"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/quizPersonnaliseView"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/folderimg"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/ListUserFolders"
+            android:layout_width="379dp"
+            android:layout_height="59dp"
+            android:background="#434343"
+            android:text="@string/gerer_un_dossier_de_suivis"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/AdminGreetingText"
+        android:layout_width="495dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/bienvenue_admin"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/folderimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminGreetingText"
+        app:srcCompat="@drawable/foldericon" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="316dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toEndOf="@+id/folderimg"
+        app:layout_constraintTop_toTopOf="@+id/folderimg"
+        app:srcCompat="@drawable/adduiz2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

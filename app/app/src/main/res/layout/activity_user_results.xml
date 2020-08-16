@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ResultsPageTitle"
+    android:background="@color/CustomBackgroundColor"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/scoreLongTerme"
+        android:layout_width="320dp"
+        android:layout_height="343dp"
+        app:layout_constraintBottom_toTopOf="@+id/TremblingAVGgraph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toEndOf="@+id/activerQuestionAdaptation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111"
+        tools:ignore="MissingConstraints" />
+
+    <!--
+<<<<<<< HEAD
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.195"
+    app:layout_constraintStart_toEndOf="@+id/activerQuestionAdaptation"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.111"
+=======
+    app:layout_constraintEnd_toStartOf="@+id/GameScoreChart"
+    app:layout_constraintHorizontal_bias="0.47"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/GameScoreChart"
+    app:layout_constraintVertical_bias="0.0"
+>>>>>>> a942067dfe15340135cf2e924aa3217d6e135d64
+    tools:ignore="MissingConstraints" />
+-->
+    <TextView
+        android:id="@+id/resultsTextTitile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/vue_d_ensemble"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FolderTitle" />
+
+    <TextView
+        android:id="@+id/FolderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/folder_title"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userBadAnswersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/resultstext1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userGoodAnswersText" />
+
+    <TextView
+        android:id="@+id/totalQuestionsAnsweredText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/resultstext2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userBadAnswersText" />
+
+    <TextView
+        android:id="@+id/userGoodAnswersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/resultstext4"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultsTextTitile" />
+
+    <TextView
+        android:id="@+id/userResultstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/resultstext3"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalQuestionsAnsweredText" />
+
+    <Button
+        android:id="@+id/ResultsDetailsButton"
+        android:layout_width="270dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:background="#69F0AE"
+        android:text="@string/results_details"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userResultstext" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/TremblingAVGgraph"
+        android:layout_width="match_parent"
+        android:layout_height="353dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/GameScoreChart"
+        android:layout_width="327dp"
+        android:layout_height="346dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/TremblingAVGgraph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toEndOf="@+id/activerQuestionAdaptation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847"
+        tools:ignore="MissingConstraints" />
+<!-- <<<<<<< HEAD
+        android:layout_width="327dp"
+        android:layout_height="346dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/TremblingAVGgraph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toEndOf="@+id/activerQuestionAdaptation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847"-->
+    <!--
+=======
+        android:layout_width="441dp"
+        android:layout_height="387dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/TremblingAVGgraph"
+        app:layout_constraintStart_toEndOf="@+id/activerQuestionAdaptation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07"
+>>>>>>> a3045233d62119ccc5bbab9f4e892fd9ec34212c
+-->
+     <!--   tools:ignore="MissingConstraints" />  -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="328dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="352dp"
+        android:text="@string/graphtext"
+        app:layout_constraintBottom_toTopOf="@+id/TremblingAVGgraph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/activerQuestionAdaptation"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:background="#18FFFF"
+        android:text="@string/button"
+        android:textColor="#191717"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toEndOf="@+id/userBadAnswersText"
+        app:layout_constraintTop_toBottomOf="@+id/resultsTextTitile"
+        tools:text="Activer Adaptation" />
+
+    <Button
+        android:id="@+id/activerTailleTexte"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:background="#18FFFF"
+        android:text="@string/augmenter_le_texte"
+        app:layout_constraintBottom_toTopOf="@+id/ResultsDetailsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/activerQuestionAdaptation"
+        app:layout_constraintTop_toBottomOf="@+id/activerQuestionAdaptation"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <TextView
+        android:id="@+id/datavisu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datavisu"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/TremblingAVGgraph"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Visualisation des Donées" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

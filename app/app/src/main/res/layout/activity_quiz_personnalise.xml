@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/CustomBackgroundColor"
+    tools:context=".views.admin.QuizPersonnalise">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginRight="-4dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/cr_ation_d_un_quiz_personnalis"
+        android:textColor="#FAF8F8"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="411dp"
+        android:layout_height="128dp"
+        android:layout_below="@+id/cardViewquiznight"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/rentrer_la_question_ici"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/reponse1"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/question"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/entr_un_choix_de_reponse"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/reponse2"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reponse1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/entr_un_choix_de_reponse"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <!--
+<<<<<<< HEAD
+=======
+-->
+    <EditText
+        android:id="@+id/reponse3"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reponse2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="19dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/entr_un_choix_de_reponse"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="406dp"
+        android:layout_height="149dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="148dp"
+        android:text="@string/crivez_dans_les_champs_appropri_s"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+    <!--
+>>>>>>> 93143bf2fe8b3a990f316ae321f558574c034338
+-->
+    <Button
+        android:id="@+id/addAudio"
+        android:layout_width="804dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/AddImage_Button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="447dp"
+        android:layout_marginLeft="447dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:background="#FF4081"
+        android:text="@string/ajouter_un_fichier_audio"
+        android:textSize="24sp" />
+    <!--
+<<<<<<< HEAD
+
+       android:layout_marginStart="21dp"
+       android:layout_marginLeft="21dp"
+       android:layout_marginTop="119dp"
+       android:layout_marginEnd="48dp"
+       android:layout_marginRight="48dp"
+       android:layout_toEndOf="@+id/textView12"
+       android:layout_toRightOf="@+id/textView12"
+       android:text="Ajouter un audio" />
+======= -->
+    <!--
+>>>>>>> 93143bf2fe8b3a990f316ae321f558574c034338 -->
+
+    <!-- <<<<<<< HEAD
+           android:layout_marginStart="55dp"
+           android:layout_marginLeft="55dp"
+           android:layout_marginEnd="268dp"
+           android:layout_marginRight="268dp"
+           android:layout_marginBottom="46dp"
+           android:text="Creer" />
+======= -->
+    <!--
+>>>>>>> 93143bf2fe8b3a990f316ae321f558574c034338
+-->
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="492dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="390dp"
+        android:layout_marginRight="390dp"
+        android:layout_marginBottom="19dp"
+        android:background="#22F178"
+        android:text="@string/creer"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/bonneReponse"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reponse3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/rentez_la_bonne_reponse_ici"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/AddImage_Button"
+        android:layout_width="424dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/cardViewquiznight"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="445dp"
+        android:layout_marginLeft="445dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="29dp"
+        android:background="#D850EF"
+        android:text="@string/ajouter_une_image"
+        android:textSize="24sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewquiznight"
+        android:layout_width="694dp"
+        android:layout_height="328dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        app:cardBackgroundColor="#171717"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleTextView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/uploadImgView"
+                android:layout_width="729dp"
+                android:layout_height="384dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.499"
+                app:srcCompat="@drawable/uploadimg" />
+
+            <Button
+                android:id="@+id/uploadimg"
+                android:layout_width="307dp"
+                android:layout_height="42dp"
+                android:background="#64FFDA"
+                android:text="@string/upload"
+                android:textColor="#070707"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/addQuestion"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="20dp"
+        android:background="#2AF365"
+        android:text="Ajouter Question"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/nomQuiz"
+        android:layout_width="398dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/descriptionQuiz"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Nom du quiz"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/descriptionQuiz"
+        android:layout_width="408dp"
+        android:layout_height="72dp"
+        android:layout_above="@+id/addQuestion"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="79dp"
+        android:layout_toEndOf="@+id/bonneReponse"
+        android:layout_toRightOf="@+id/bonneReponse"
+        android:ems="10"
+        android:hint="La description du quiz"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+</RelativeLayout>
